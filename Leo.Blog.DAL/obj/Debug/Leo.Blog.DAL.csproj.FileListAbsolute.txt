@@ -1,0 +1,17 @@
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\obj\Debug\Leo.Blog.DAL.csprojResolveAssemblyReference.cache
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Blog.mdf
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Blog_log.ldf
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.DAL.dll.config
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.DAL.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.DAL.pdb
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\EntityFramework.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.IDAL.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.Model.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.IDAL.pdb
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\Leo.Blog.Model.pdb
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\EntityFramework.xml
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\obj\Debug\Leo.Blog.DAL.dll
+E:\vs2013\Leo.Blog\Leo.Blog.DAL\obj\Debug\Leo.Blog.DAL.pdb

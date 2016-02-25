@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+    <EntitySetMapping Name="Sys_Account">
+      <EntityTypeMapping TypeName="BlogModel.Sys_Account">
+        <MappingFragment StoreEntitySet="Sys_Account">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_AccountInfo">
+      <EntityTypeMapping TypeName="BlogModel.Sys_AccountInfo">
+        <MappingFragment StoreEntitySet="Sys_AccountInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TelePhone" ColumnName="TelePhone" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Authorize">
+      <EntityTypeMapping TypeName="BlogModel.Sys_Authorize">
+        <MappingFragment StoreEntitySet="Sys_Authorize">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AuthFirstId" ColumnName="AuthFirstId" />
+          <ScalarProperty Name="AuthSecondId" ColumnName="AuthSecondId" />
+          <ScalarProperty Name="AuthType" ColumnName="AuthType" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_ModuleBtn">
+      <EntityTypeMapping TypeName="BlogModel.Sys_ModuleBtn">
+        <MappingFragment StoreEntitySet="Sys_ModuleBtn">
+          <ScalarProperty Name="BtnId" ColumnName="BtnId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="DOM_ID" ColumnName="DOM ID" />
+          <ScalarProperty Name="BtnName" ColumnName="BtnName" />
+          <ScalarProperty Name="BtnType" ColumnName="BtnType" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Modules">
+      <EntityTypeMapping TypeName="BlogModel.Sys_Modules">
+        <MappingFragment StoreEntitySet="Sys_Modules">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ModuleDesc" ColumnName="ModuleDesc" />
+          <ScalarProperty Name="WebUrl" ColumnName="WebUrl" />
+          <ScalarProperty Name="ParentModuleId" ColumnName="ParentModuleId" />
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="SortNo" ColumnName="SortNo" />
+          <ScalarProperty Name="IsAutoExpend" ColumnName="IsAutoExpend" />
+          <ScalarProperty Name="IconName" ColumnName="IconName" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_OrgInfo">
+      <EntityTypeMapping TypeName="BlogModel.Sys_OrgInfo">
+        <MappingFragment StoreEntitySet="Sys_OrgInfo">
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+          <ScalarProperty Name="OrgDesc" ColumnName="OrgDesc" />
+          <ScalarProperty Name="ParentOrgId" ColumnName="ParentOrgId" />
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="OrgPath" ColumnName="OrgPath" />
+          <ScalarProperty Name="SortNo" ColumnName="SortNo" />
+          <ScalarProperty Name="IsAutoExpend" ColumnName="IsAutoExpend" />
+          <ScalarProperty Name="IconName" ColumnName="IconName" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Roles">
+      <EntityTypeMapping TypeName="BlogModel.Sys_Roles">
+        <MappingFragment StoreEntitySet="Sys_Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleDesc" ColumnName="RoleDesc" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="LastEditBy" ColumnName="LastEditBy" />
+          <ScalarProperty Name="LastEditDT" ColumnName="LastEditDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

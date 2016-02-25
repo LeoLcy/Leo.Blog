@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sys_Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Account" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsEnable" Type="Int32" Nullable="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Sys_AccountInfo" Relationship="Self.FK_SYS_ACCO_REFERENCE_SYS_ACCO" FromRole="Sys_Account" ToRole="Sys_AccountInfo" />
+  </EntityType>
+  <EntityType Name="Sys_AccountInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="OrgId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NickName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TelePhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QQ" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Sys_Account" Relationship="Self.FK_SYS_ACCO_REFERENCE_SYS_ACCO" FromRole="Sys_AccountInfo" ToRole="Sys_Account" />
+    <NavigationProperty Name="Sys_OrgInfo" Relationship="Self.FK_SYS_ACCO_REFERENCE_SYS_ORGI" FromRole="Sys_AccountInfo" ToRole="Sys_OrgInfo" />
+  </EntityType>
+  <EntityType Name="Sys_Authorize">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="AuthFirstId" Type="Int32" />
+    <Property Name="AuthSecondId" Type="Int32" />
+    <Property Name="AuthType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_ModuleBtn">
+    <Key>
+      <PropertyRef Name="BtnId" />
+    </Key>
+    <Property Name="BtnId" Type="Int32" Nullable="false" />
+    <Property Name="ModuleId" Type="Int32" />
+    <Property Name="DOM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BtnName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BtnType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Int32" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Sys_Modules" Relationship="Self.FK_SYS_MODU_REFERENCE_SYS_MODU" FromRole="Sys_ModuleBtn" ToRole="Sys_Modules" />
+  </EntityType>
+  <EntityType Name="Sys_Modules">
+    <Key>
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="ModuleId" Type="Int32" Nullable="false" />
+    <Property Name="ModuleName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ModuleDesc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="WebUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ParentModuleId" Type="Int32" Nullable="false" />
+    <Property Name="ParentName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SortNo" Type="Int32" />
+    <Property Name="IsAutoExpend" Type="Int32" />
+    <Property Name="IconName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Int32" Nullable="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Sys_ModuleBtn" Relationship="Self.FK_SYS_MODU_REFERENCE_SYS_MODU" FromRole="Sys_Modules" ToRole="Sys_ModuleBtn" />
+  </EntityType>
+  <EntityType Name="Sys_OrgInfo">
+    <Key>
+      <PropertyRef Name="OrgId" />
+    </Key>
+    <Property Name="OrgId" Type="Int32" Nullable="false" />
+    <Property Name="OrgName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrgDesc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ParentOrgId" Type="Int32" Nullable="false" />
+    <Property Name="ParentName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrgPath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SortNo" Type="Int32" />
+    <Property Name="IsAutoExpend" Type="Int32" />
+    <Property Name="IconName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Int32" Nullable="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Sys_AccountInfo" Relationship="Self.FK_SYS_ACCO_REFERENCE_SYS_ORGI" FromRole="Sys_OrgInfo" ToRole="Sys_AccountInfo" />
+  </EntityType>
+  <EntityType Name="Sys_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RoleDesc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnable" Type="Int32" Nullable="false" />
+    <Property Name="CreateBy" Type="Int32" />
+    <Property Name="CreateDT" Type="DateTime" Precision="3" />
+    <Property Name="LastEditBy" Type="Int32" />
+    <Property Name="LastEditDT" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_SYS_ACCO_REFERENCE_SYS_ACCO">
+    <End Role="Sys_Account" Type="Self.Sys_Account" Multiplicity="1" />
+    <End Role="Sys_AccountInfo" Type="Self.Sys_AccountInfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sys_AccountInfo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_ACCO_REFERENCE_SYS_ORGI">
+    <End Role="Sys_OrgInfo" Type="Self.Sys_OrgInfo" Multiplicity="0..1" />
+    <End Role="Sys_AccountInfo" Type="Self.Sys_AccountInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_OrgInfo">
+        <PropertyRef Name="OrgId" />
+      </Principal>
+      <Dependent Role="Sys_AccountInfo">
+        <PropertyRef Name="OrgId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_MODU_REFERENCE_SYS_MODU">
+    <End Role="Sys_Modules" Type="Self.Sys_Modules" Multiplicity="0..1" />
+    <End Role="Sys_ModuleBtn" Type="Self.Sys_ModuleBtn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Modules">
+        <PropertyRef Name="ModuleId" />
+      </Principal>
+      <Dependent Role="Sys_ModuleBtn">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BlogEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sys_Account" EntityType="Self.Sys_Account" />
+    <EntitySet Name="Sys_AccountInfo" EntityType="Self.Sys_AccountInfo" />
+    <EntitySet Name="Sys_Authorize" EntityType="Self.Sys_Authorize" />
+    <EntitySet Name="Sys_ModuleBtn" EntityType="Self.Sys_ModuleBtn" />
+    <EntitySet Name="Sys_Modules" EntityType="Self.Sys_Modules" />
+    <EntitySet Name="Sys_OrgInfo" EntityType="Self.Sys_OrgInfo" />
+    <EntitySet Name="Sys_Roles" EntityType="Self.Sys_Roles" />
+    <AssociationSet Name="FK_SYS_ACCO_REFERENCE_SYS_ACCO" Association="Self.FK_SYS_ACCO_REFERENCE_SYS_ACCO">
+      <End Role="Sys_Account" EntitySet="Sys_Account" />
+      <End Role="Sys_AccountInfo" EntitySet="Sys_AccountInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_ACCO_REFERENCE_SYS_ORGI" Association="Self.FK_SYS_ACCO_REFERENCE_SYS_ORGI">
+      <End Role="Sys_OrgInfo" EntitySet="Sys_OrgInfo" />
+      <End Role="Sys_AccountInfo" EntitySet="Sys_AccountInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_MODU_REFERENCE_SYS_MODU" Association="Self.FK_SYS_MODU_REFERENCE_SYS_MODU">
+      <End Role="Sys_Modules" EntitySet="Sys_Modules" />
+      <End Role="Sys_ModuleBtn" EntitySet="Sys_ModuleBtn" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

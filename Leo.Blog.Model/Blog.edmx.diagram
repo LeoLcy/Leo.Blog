@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f4606a0a5e5461983d6f91ed4457b63" Name="Diagram1">
+        <EntityTypeShape EntityType="BlogModel.Sys_Account" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_AccountInfo" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_Authorize" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_ModuleBtn" Width="1.5" PointX="8" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_Modules" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_OrgInfo" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogModel.Sys_Roles" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="BlogModel.FK_SYS_ACCO_REFERENCE_SYS_ACCO" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogModel.FK_SYS_ACCO_REFERENCE_SYS_ORGI" ManuallyRouted="false" />
+        <AssociationConnector Association="BlogModel.FK_SYS_MODU_REFERENCE_SYS_MODU" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
