@@ -39,8 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysModule\Sys_Account_B.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Leo.Blog.DAL\Leo.Blog.DAL.csproj">
+      <Project>{5f06142d-fffe-4547-9c31-fe000a7b6593}</Project>
+      <Name>Leo.Blog.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Leo.Blog.Model\Leo.Blog.Model.csproj">
+      <Project>{a245b7b0-56bb-4869-ad29-06a11736ea5b}</Project>
+      <Name>Leo.Blog.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Leo.Blog.ViewModel\Leo.Blog.ViewModel.csproj">
+      <Project>{97f2872f-cb44-4a74-9e7c-fa211e385a50}</Project>
+      <Name>Leo.Blog.ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
