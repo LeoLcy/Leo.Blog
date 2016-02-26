@@ -3,3 +3,8 @@ E:\vs2013\Leo.Blog\Leo.Blog.IDAL\bin\Debug\Leo.Blog.IDAL.pdb
 E:\vs2013\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.csprojResolveAssemblyReference.cache
 E:\vs2013\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.dll
 E:\vs2013\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.pdb
+D:\Leo\项目\Leo.Blog\Leo.Blog.IDAL\bin\Debug\Leo.Blog.IDAL.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.IDAL\bin\Debug\Leo.Blog.IDAL.pdb
+D:\Leo\项目\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.csprojResolveAssemblyReference.cache
+D:\Leo\项目\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.IDAL\obj\Debug\Leo.Blog.IDAL.pdb

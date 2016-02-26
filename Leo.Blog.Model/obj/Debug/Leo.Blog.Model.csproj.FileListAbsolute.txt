@@ -11,3 +11,17 @@ E:\vs2013\Leo.Blog\Leo.Blog.Model\bin\Debug\zh-Hans\EntityFramework.resources.dl
 E:\vs2013\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.csprojResolveAssemblyReference.cache
 E:\vs2013\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.dll
 E:\vs2013\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.pdb
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\Blog.mdf
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\Blog_log.ldf
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\Leo.Blog.Model.dll.config
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\Leo.Blog.Model.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\Leo.Blog.Model.pdb
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\EntityFramework.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\EntityFramework.xml
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.csprojResolveAssemblyReference.cache
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.dll
+D:\Leo\项目\Leo.Blog\Leo.Blog.Model\obj\Debug\Leo.Blog.Model.pdb
