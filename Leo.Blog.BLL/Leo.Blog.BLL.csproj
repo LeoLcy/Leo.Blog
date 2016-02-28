@@ -47,6 +47,10 @@
       <Project>{5f06142d-fffe-4547-9c31-fe000a7b6593}</Project>
       <Name>Leo.Blog.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Leo.Blog.IDAL\Leo.Blog.IDAL.csproj">
+      <Project>{FA4BA500-00E1-4297-A989-E13B70B6082A}</Project>
+      <Name>Leo.Blog.IDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Leo.Blog.Model\Leo.Blog.Model.csproj">
       <Project>{a245b7b0-56bb-4869-ad29-06a11736ea5b}</Project>
       <Name>Leo.Blog.Model</Name>
