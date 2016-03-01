@@ -48,3 +48,5 @@ E:\vs2013\Leo.Blog\Leo.Blog\bin\Leo.Blog.Model.pdb
 E:\vs2013\Leo.Blog\Leo.Blog\bin\Leo.Blog.IDAL.pdb
 E:\vs2013\Leo.Blog\Leo.Blog\bin\EntityFramework.xml
 E:\vs2013\Leo.Blog\Leo.Blog\bin\zh-Hans\EntityFramework.resources.dll
+E:\vs2013\Leo.Blog\Leo.Blog\bin\log4net.dll
+E:\vs2013\Leo.Blog\Leo.Blog\bin\log4net.xml

@@ -1,11 +1,12 @@
-﻿using log4net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+using log4net;
+using log4net.Appender;
+using log4net.Config;
+using log4net.Layout;
 
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]  
+[assembly: XmlConfigurator(Watch = true)]  
 namespace Leo.Blog.Common.LogHelper
 {
     public class Log4netHelper
@@ -14,7 +15,7 @@ namespace Leo.Blog.Common.LogHelper
         //定义信息的二次处理
         public static event Action<string> OutputMessage;
         //ILog对象
-        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         //记录异常日志数据库连接字符串
         //private const string _ConnectionString = @"data source=your server;initial catalog=your db;integrated security=false;persist security info=True;User ID=sa;Password=1111";
         //信息模板

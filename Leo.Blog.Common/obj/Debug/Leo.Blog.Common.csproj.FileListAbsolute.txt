@@ -3,3 +3,7 @@ E:\vs2013\Leo.Blog\Leo.Blog.Common\bin\Debug\Leo.Blog.Common.pdb
 E:\vs2013\Leo.Blog\Leo.Blog.Common\obj\Debug\Leo.Blog.Common.csprojResolveAssemblyReference.cache
 E:\vs2013\Leo.Blog\Leo.Blog.Common\obj\Debug\Leo.Blog.Common.dll
 E:\vs2013\Leo.Blog\Leo.Blog.Common\obj\Debug\Leo.Blog.Common.pdb
+E:\vs2013\Leo.Blog\Leo.Blog.Common\bin\Debug\log4net.dll
+E:\vs2013\Leo.Blog\Leo.Blog.Common\bin\Debug\Newtonsoft.Json.dll
+E:\vs2013\Leo.Blog\Leo.Blog.Common\bin\Debug\log4net.xml
+E:\vs2013\Leo.Blog\Leo.Blog.Common\bin\Debug\Newtonsoft.Json.xml
