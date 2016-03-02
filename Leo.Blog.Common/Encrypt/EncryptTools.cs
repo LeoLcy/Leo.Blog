@@ -8,16 +8,43 @@ namespace Leo.Blog.Common.Encrypt
 {
     public class EncryptTools
     {
-        private const string StrEncrKey = "#@?,:*&%^!~";
         /// <summary>
-        /// MD5加密
+        /// MD5加密方式
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string GetMd5(string str)
+        public static string GetMD5(string str, string appendText)
         {
-            return FormsAuthentication.HashPasswordForStoringInConfigFile(str, "MD5");
+            string needStr = string.IsNullOrEmpty(appendText) ? str : str + appendText;
+            lock (typeof(EncryptTools))
+            {
+                byte[] b = Encoding.UTF8.GetBytes(needStr);
+                b = new System.Security.Cryptography.MD5CryptoServiceProvider().ComputeHash(b);
+                string ret = "";
+                for (int i = 0; i < b.Length; i++)
+                    ret += b[i].ToString("x").PadLeft(2, '0');
+                return ret;
+            }
         }
+        /// <summary>
+        /// MD5加密方式
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string GetMD5(string str)
+        {
+            lock (typeof(EncryptTools))
+            {
+                byte[] b = Encoding.UTF8.GetBytes(str);
+                b = new System.Security.Cryptography.MD5CryptoServiceProvider().ComputeHash(b);
+                string ret = "";
+                for (int i = 0; i < b.Length; i++)
+                    ret += b[i].ToString("x").PadLeft(2, '0');
+                return ret;
+            }
+        }
+
+        private const string StrEncrKey = "#@?,:*&%^!~";
         /// <summary>
         /// DESC解密
         /// </summary>
